@@ -1,0 +1,30 @@
+<header>
+    <nav>
+      <!-- Logo -->
+      <img
+        src="https://thoughtleadership.org/wp-content/uploads/2024/11/TLI-Center-for-the-Future-of-Coaching.png"
+        alt="Logo"
+      />
+  
+      <!-- Menu Toggle Button for Mobile -->
+      <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+  
+      <!-- Navigation Links -->
+      <ul [class.show]="isMenuOpen">
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+        <li><a routerLink="/events" routerLinkActive="active">Events</a></li>
+        <li><a routerLink="/team" routerLinkActive="active">Team</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+  
+      <!-- Buttons -->
+      <div class="buttons">
+        <button>Login</button>
+        <button>Sign</button>
+      </div>
+    </nav>
+  </header>
+  
+  

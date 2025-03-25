@@ -1,0 +1,17 @@
+<section class="events">
+  <h2>Upcoming Events</h2>
+  <p>Stay tuned for our events and webinars.</p>
+
+  <div class="event-list">
+    <div class="event" *ngFor="let event of events">
+      <div class="event-image">
+        <img [src]="event.image" alt="{{ event.title }}" />
+      </div>
+      <div class="event-details">
+        <h3>{{ event.title }}</h3>
+        <p>{{ event.date }}</p>
+        <p>{{ event.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #fff; /* White background for clean look */
+    color: #333; /* Dark text for contrast */
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Navigation Container */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Styling */
+  nav img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Navigation Links */
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: #333; /* Dark gray text for links */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #f0f0f0; /* Light gray background for hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for hover */
+  }
+  
+  /* Buttons */
+  nav .buttons button {
+    background-color: #333; /* Dark button for contrast */
+    color: #fff; /* White text */
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  nav .buttons button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Mobile Menu Styles */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      display: none; /* Hidden by default */
+      width: 100%;
+      background-color: #fff; /* Match header color */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    }
+  
+    nav ul.show {
+      display: flex; /* Show when toggled */
+    }
+  
+    nav ul li a {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  }
+  
