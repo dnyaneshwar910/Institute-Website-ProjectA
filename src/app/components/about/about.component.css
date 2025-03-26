@@ -1,69 +1,96 @@
-/* Reset some basic styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-}
-
-.about {
-  background-color: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.text-content {
-  max-width: 500px;
-  text-align: left;
-}
-
-.text-content h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.text-content p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.8;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    text-align: center;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .text-content h2 {
-    font-size: 2rem;
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
   }
 
-  .text-content p {
-    font-size: 1rem;
+  .about {
+    padding: 60px 20px;
+    background-color: #fff;
   }
-}
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col-image {
+    flex: 1;
+    margin-right: 30px;
+  }
+
+  .col-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .col-text {
+    flex: 2;
+    max-width: 700px;
+  }
+
+  .col-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2e3a59;
+  }
+
+  .col-text h3 {
+    font-size: 1.75rem;
+    margin-top: 30px;
+    color: #2e3a59;
+  }
+
+  .col-text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .col-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .col-text ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .col-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .col-text {
+      max-width: 100%;
+    }
+  }

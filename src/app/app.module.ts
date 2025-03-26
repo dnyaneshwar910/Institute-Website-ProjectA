@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
-
+import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -28,7 +29,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ,HttpClientModule,
+    provideHttpClient(withFetch()),
+    ToastrModule.forRoot()
   ],
   providers: [
     provideClientHydration(withEventReplay())

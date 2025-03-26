@@ -26,6 +26,24 @@ export class TeamComponent {
       role: 'Lead Designer',
       bio: 'Michael is the creative force behind our user-friendly and engaging designs.',
       image: 'https://cdn.pixabay.com/photo/2024/11/10/12/33/businessman-9187789_640.jpg'
+    },
+    {
+      name: 'Prajwal Thorat',
+      role: 'Lead Designer',
+      bio: 'Michael is the creative force behind our user-friendly and engaging designs.',
+      image: 'https://static.vecteezy.com/system/resources/thumbnails/048/764/549/small/confident-middleaged-male-school-teacher-middle-eastern-descent-smiling-in-classroom-ideal-for-educational-professional-and-cultural-diversity-themes-photo.jpg'
+    },
+    {
+      name: 'Disha Tribhuvan',
+      role: 'Lead Designer',
+      bio: 'Michael is the creative force behind our user-friendly and engaging designs.',
+      image: 'https://static.vecteezy.com/system/resources/previews/040/691/150/non_2x/ai-generated-woman-standing-in-classroom-with-arms-crossed-generative-ai-photo.jpg'
+    },
+    {
+      name: 'Suraj Bhokare',
+      role: 'Lead Designer',
+      bio: 'Michael is the creative force behind our user-friendly and engaging designs.',
+      image: 'https://static.vecteezy.com/system/resources/thumbnails/049/462/160/small/confident-african-american-public-school-teacher-smiling-in-colorful-classroom-setting-photo.jpeg'
     }
   ];
 }
